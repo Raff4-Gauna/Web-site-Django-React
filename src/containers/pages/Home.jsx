@@ -7,7 +7,7 @@ import LogoCloud from "components/home/LogoCloud"
 import UseCases from "components/home/UseCases"
 import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
-import Scroll from "components/SmoothScrollbar"
+// import Scroll from "components/SmoothScrollbar"
 import Layout from "hocs/layouts/Layout"
 import { useEffect } from "react"
 
