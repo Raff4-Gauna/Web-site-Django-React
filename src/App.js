@@ -3,8 +3,9 @@ import store from './store';
 import { Provider } from 'react-redux';
 
 
-import Error404 from 'containers/errors/Error404';
+
 import Home from 'containers/pages/Home';
+import Error404 from 'containers/Errors/Error404';
 
 
 function App() {
