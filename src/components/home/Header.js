@@ -4,7 +4,7 @@ function Header(){
     return(
         <main>
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+          <div className="mx-auto max-w-full xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48 pt-24 pb-12">
             <div>
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
@@ -19,21 +19,19 @@ function Header(){
               </div>
               <div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-                  Data to <span> </span>
-                        <div className='inline-flex' style={{color: 'red', fontWeight:'bold'}}>
-                              <Typewriter
-                                words={['Eat', 'Sleep', 'Code', 'Repeat!']}
-                                loop={0}
-                                cursor
-                                cursorStyle='_'
-                                typeSpeed={120}
-                                deleteSpeed={50}
-                                delaySpeed={1000}
-                                // onLoopDone={handleDone}
-                                // onType={handleType}
-                              />
-                        </div>
-                </h1>
+                    Data to{' '}
+                    <span style={{ color: 'red', fontWeight: 'bold' }}>
+                      <Typewriter
+                        words={['Eat', 'Sleep', 'Code', 'Repeat!']}
+                        loop={0}
+                        cursor
+                        cursorStyle="_"
+                        typeSpeed={120}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                      />
+                    </span>
+                  </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
                   amet fugiat veniam occaecat fugiat aliqua.

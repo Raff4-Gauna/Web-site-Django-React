@@ -1,17 +1,19 @@
-import CaseCard from "components/cases/CaseCard"
-import CasesList from "components/cases/CasesList"
-import Header from "components/cases/Header"
+import Features from "components/careers/Features"
+import Header from "components/careers/Headers"
+import Partners from "components/careers/Partners"
+import PositionsList from "components/careers/PositionsList"
+import Testimonial from "components/careers/Testimonial"
 import Footer from "components/navigation/Footer"
 import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/Layout"
 import { Helmet } from 'react-helmet-async';
 
 
-function Cases(){
+function Careers(){
     return(
         <Layout>
             <Helmet>
-                <title>Boom | Casos</title>
+                <title>Boom | Carreras</title>
                 <meta name="description" content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones." />
                 <meta name="keywords" content='agencia de software, agencia de marketing, creacion de pagina web' />
                 <meta name="robots" content='all' />
@@ -32,16 +34,18 @@ function Cases(){
                 />
                 <meta name="twitter:image" content='https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg' />
                 <meta name="twitter:card" content="summary_large_image" />
-            </Helmet>
+            </Helmet>            
             <Navbar/>
                 <div className="pt-28">
                     <Header/>
-                    <CasesList/>
-                    <CaseCard/>
+                    <Testimonial/>
+                    <Partners/>
+                    <Features/>
+                    <PositionsList/>
                 </div>
             <Footer/>
         </Layout>
     )
 }
 
-export default Cases
+export default Careers
